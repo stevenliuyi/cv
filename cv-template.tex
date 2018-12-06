@@ -1,0 +1,241 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{<< basic.name >>}
+\newcommand{\CVTitle}{<< basic.title >>}
+\newcommand{\CVNote}{Updated on {\today}.}
+\newcommand{\CVWebpage}{<< basic.website >>}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/<< basic.address|urlencode >>}
+{<< basic.address >>}
+\par
+\href{mailto:<< basic.email.work >>}
+{<< basic.email.work >>}
+\,\SubBulletSymbol\,
+%+1\,(555)\,101-1001
+%\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+~< for edu in education >~
+    \Entry
+    \textbf{<< edu.school >>},
+    << edu.location >>
+
+    \Gap
+    ~< for study in edu.studies >~
+        \BulletItem
+        << study.title >>
+        \hfill
+        << study.time|date_format >>
+        ~< if study.details is defined or study.keywords is defined >~
+            \begin{Detail}
+                ~< if study.details is defined >~
+                    ~< for detail in study.details >~
+                        \SubBulletItem
+                        << detail >>
+                    ~< endfor >~
+                ~< endif >~
+                ~< if study.keywords is defined >~
+                    \SubBulletItem
+                    Focus:
+                    << study.keywords|join(', ') >>
+                ~< endif >~
+            \end{Detail}
+        ~< endif >~
+    ~< endfor >~
+~< endfor >~
+
+%%%%%%%%%%%%%%%%
+%% EXPERIENCE %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+~< for exp in experience >~
+    \Entry
+    \textbf{<< exp.title >>},
+    << exp.institute|html2latex >>
+    \hfill
+    << exp.time|date_format >>
+    ~< if exp.details is defined >~
+        \begin{Detail}
+        ~< for detail in exp.details >~
+            \BulletItem
+            << detail >>
+        ~< endfor >~
+        \end{Detail}
+    ~< else >~
+        \Gap
+    ~< endif >~
+~< endfor >~
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH PROJECTS %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Selected Research Projects}
+{Selected Research Projects}
+{PDF:ResearchProjects}
+
+~< for res in research >~
+    \Entry
+    << res.title >>
+    \hfill
+    << res.time|date_format >>
+    \begin{Detail}
+    ~< for detail in res.details >~
+        \BulletItem
+        << detail|html2latex >>
+    ~< endfor >~
+    \end{Detail}
+~< endfor >~
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+~< for publication in publications >~
+    \Entry
+    << publication.authors|html2latex >>.
+    ~< if publication.link is defined >~
+        ``\href{<< publication.link >>}{<< publication.title >>},''
+    ~< else >~
+        ``<< publication.title >>,''
+    ~< endif >~
+    << publication.detail|html2latex >>.
+    \Gap
+~< endfor >~
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PRESENTATIONS & ABSTRACTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Presentations\newline\& Abstracts}
+{Presentations \& Abstracts}
+{PDF:PresentationsAndAbstracts}
+
+~< for presentation in presentations >~
+    \Entry
+    << presentation.authors|html2latex >>.
+    ~< if presentation.link is defined >~
+        ``\href{<< presentation.link >>}{<< presentation.title >>},''
+    ~< else >~
+        ``<< presentation.title >>,''
+    ~< endif >~
+    << presentation.detail|html2latex >>.
+    \Gap
+~< endfor >~
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% HONORS & AWARDS  %%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Honors \& Awards}
+{Honors \& Awards}
+{PDF:HonorsAndAwards}
+
+~< for award in awards >~
+    \BulletItem
+    << award.award >>
+    \hfill
+    << award.time|date_format >>
+    ~< if award.detail is defined >~
+        \begin{Detail}
+        \Item
+        << award.detail >>
+        \end{Detail}
+    ~< endif >~
+    \Gap
+~< endfor >~
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}
