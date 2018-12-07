@@ -1,6 +1,7 @@
 .DS_Store
 
 # auxiliary files
+cv.tex
 *.aux
 *.fdb_latexmk
 *.fls
