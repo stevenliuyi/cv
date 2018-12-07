@@ -162,6 +162,52 @@ breaklinks}
     \end{Detail}
 ~< endfor >~
 
+%%%%%%%%%%%%%%%%%%%%%%
+%% GRADUATE COURSES %%
+%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Selected Graduate Courses}
+{Selected Graduate Courses}
+{PDF:GraduateCourses}
+
+~< for cat in courses >~
+    \Entry
+    \textbf{<< cat.category >>}
+    --
+    ~<for course in cat.courses >~
+        ~< if course.github is defined >~
+            \href{https://github.com/stevenliuyi/<< course.github >>}{<< course.title >>}<< ',' if not loop.last else '.' >>
+        ~< else >~
+            << course.title >><< ',' if not loop.last else '.' >>
+        ~< endif >~
+        \nolinebreak
+    ~< endfor >~
+    \Gap
+~< endfor >~
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEACHING EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Teaching Experience}
+{Teaching Experience}
+{PDF:TeachingExperience}
+
+~< for position in teaching >~
+    \Entry
+    \textbf{<< position.title >>},
+    << position.institute >>
+    \hfill
+    << position.time|date_format >>
+    \begin{Detail}
+    ~< for course in position.courses >~
+        \BulletItem
+        << course.title >> (<< course.time >>)
+    ~< endfor >~
+    \end{Detail}
+~< endfor >~
+
 %%%%%%%%%%%%%%%%%%
 %% PUBLICATIONS %%
 %%%%%%%%%%%%%%%%%%
