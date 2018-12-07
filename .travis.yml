@@ -1,7 +1,10 @@
 language: python
+
 python:
   - "3.6"
+
 sudo: required
+
 install:
   # install conda with tectonic
   - sudo apt-get update
@@ -15,11 +18,16 @@ install:
   - conda info -a
   - conda create -q -n tectonic python=$TRAVIS_PYTHON_VERSION jinja2 yaml pyyaml tectonic
   - source activate tectonic
+
 script:
   - python generate.py --tectonic
+
 after_success:
-  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.email "stevenliuyi@gmail.com"
   - git config --global user.name "Travis CI"
   - git add cv.pdf
   - git commit -m "add generated PDF [skip ci]" # skip build
   - git push "https://stevenliuyi:${GITHUB_TOKEN}@github.com/stevenliuyi/cv.git" HEAD:master
+
+notifications:
+  email: false
