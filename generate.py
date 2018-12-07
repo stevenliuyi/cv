@@ -3,6 +3,7 @@ import os
 import yaml
 import re
 import copy
+import argparse
 from jinja2 import Environment, FileSystemLoader
 
 yaml_name = 'cv.yml'
@@ -96,15 +97,29 @@ def read_yaml():
     return yaml_data
 
 
-def compile():
-    os.system(f'latexmk -xelatex {output_name}')
+def compile(tex='latexmk'):
+    if tex == 'latexmk':
+        os.system(f'latexmk -xelatex {output_name}')
+    elif tex == 'tectonic':
+        os.system(f'tectonic {output_name}')
     #os.system('latexmk -c') # clean up
 
 
 def main():
+    # parse the arguments
+    parser = argparse.ArgumentParser(
+        description='Generate LaTex PDF resume from YAML file.')
+    parser.add_argument(
+        '--tectonic', action='store_true', help='use Tectonic to generate PDF')
+    args = parser.parse_args()
+
     yaml_data = read_yaml()
     process_resume(LATEX_CONTEXT, yaml_data)
-    compile()
+
+    if args.tectonic:
+        compile(tex='tectonic')
+    else:
+        compile()
 
 
 if __name__ == "__main__":

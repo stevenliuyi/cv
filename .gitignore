@@ -1,4 +1,5 @@
 .DS_Store
+*.sw*
 
 # auxiliary files
 cv.tex
@@ -7,5 +8,4 @@ cv.tex
 *.fls
 *.log
 *.out
-*.pdf
 *.xdv
