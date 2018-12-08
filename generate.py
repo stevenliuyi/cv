@@ -6,10 +6,6 @@ import copy
 import argparse
 from jinja2 import Environment, FileSystemLoader
 
-yaml_name = 'cv.yml'
-template_name = 'cv-template.tex'
-output_name = 'cv.tex'
-
 
 def date_format(s):
     s = str(s)
@@ -106,16 +102,33 @@ def compile(tex='latexmk'):
 
 
 def main():
+    global yaml_name, output_name, template_name
+
     # parse the arguments
     parser = argparse.ArgumentParser(
         description='Generate LaTex PDF resume from YAML file.')
     parser.add_argument(
         '--tectonic', action='store_true', help='use Tectonic to generate PDF')
     parser.add_argument(
+        '-c',
         '--color',
         nargs='?',
         default='000000',
         help='hex color code (e.g. 0d8aba) for the secondary text color')
+    parser.add_argument(
+        '-y', '--yaml', nargs='?', default='cv.yml', help='input YAML file')
+    parser.add_argument(
+        '-o',
+        '--output',
+        nargs='?',
+        default='output.tex',
+        help='output TeX file')
+    parser.add_argument(
+        '-t',
+        '--template',
+        nargs='?',
+        default='cv-template.tex',
+        help='LaTeX template file')
     args = parser.parse_args()
 
     # check if color is valid
@@ -125,6 +138,18 @@ def main():
             'hex color code is not valid. It must contains and only contains 6 hex symbols (0-9 and A-F).'
         )
         exit()
+
+    if not os.path.isfile(args.yaml):
+        print(f'{args.yaml} does not exist!')
+        exit()
+
+    if not os.path.isfile(args.template):
+        print(f'{args.template} does not exist!')
+        exit()
+
+    yaml_name = args.yaml
+    output_name = args.output
+    template_name = args.template
 
     yaml_data = read_yaml()
     yaml_data['color'] = args.color

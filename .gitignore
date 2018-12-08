@@ -2,7 +2,8 @@
 *.sw*
 
 # auxiliary files
-cv.tex
+output.tex
+output.pdf
 *.aux
 *.fdb_latexmk
 *.fls

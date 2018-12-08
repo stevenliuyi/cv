@@ -21,8 +21,14 @@ Use [Tectonic](https://tectonic-typesetting.github.io) instead of Latexmk to com
 python generate.py --tectonic
 ```
 
-Chnage the secondary text color of the file (default is black, which is the same as the primary text color):
+Change the secondary text color of the file (default is black, which is the same as the primary text color):
 
 ```
 python generate.py --color 0d8aba
+```
+
+List all available arguments:
+
+```
+python generate.py --help
 ```
