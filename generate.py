@@ -111,9 +111,23 @@ def main():
         description='Generate LaTex PDF resume from YAML file.')
     parser.add_argument(
         '--tectonic', action='store_true', help='use Tectonic to generate PDF')
+    parser.add_argument(
+        '--color',
+        nargs='?',
+        default='000000',
+        help='hex color code (e.g. 0d8aba) for the secondary text color')
     args = parser.parse_args()
 
+    # check if color is valid
+    color_match = re.search(r'^[0-9a-fA-F]{6}$', args.color)
+    if not color_match:
+        print(
+            'hex color code is not valid. It must contains and only contains 6 hex symbols (0-9 and A-F).'
+        )
+        exit()
+
     yaml_data = read_yaml()
+    yaml_data['color'] = args.color
     process_resume(LATEX_CONTEXT, yaml_data)
 
     if args.tectonic:

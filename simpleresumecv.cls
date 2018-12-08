@@ -87,7 +87,7 @@ includefoot]{geometry}
 \RequirePackage[none]{hyphenat}
 
 % Colors.
-\RequirePackage[usenames]{color}
+\RequirePackage[usenames]{xcolor}
 % \definecolor{MyDarkBlue}{RGB}{0,90,160}
 % {\color{MyDarkBlue}This text is dark blue}
 

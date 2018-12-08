@@ -48,6 +48,18 @@ breaklinks}
 \newcommand{\Code}[1]{\mbox{\textbf{#1}}}
 \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
 
+% Define colors.
+\definecolor{mycolor}{HTML}{<< color >>}
+
+\let\OldSection\Section
+\renewcommand{\Section}[3]{\color{mycolor}\OldSection{#1}{#2}{#3}\color{black}}
+
+\let\OldBulletItem\BulletItem
+\renewcommand{\BulletItem}{{\color{mycolor}\OldBulletItem}}
+
+\let\OldSubBulletItem\SubBulletItem
+\renewcommand{\SubBulletItem}{{\color{mycolor}\OldSubBulletItem}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ACTUAL DOCUMENT.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -58,23 +70,25 @@ breaklinks}
 % TITLE BLOCK %
 %%%%%%%%%%%%%%%
 
+{\color{mycolor}
 \Title{\CVAuthor}
+}
 
 \begin{SubTitle}
 \href{https://www.google.com/maps/place/<< basic.address|urlencode >>}
 {<< basic.address >>}
 \par
-\faEnvelopeO\,
+{\color{mycolor}\faEnvelopeO}\,
 \href{mailto:<< basic.email.work >>}
 {<< basic.email.work >>}
 \,\SubBulletSymbol\,
 %+1\,(555)\,101-1001
 %\,\SubBulletSymbol\,
-\faGlobe\,
+{\color{mycolor}\faGlobe}\,
 \href{\CVWebpage}
 {\url{\CVWebpage}}
 \,\SubBulletSymbol\,
-\faGithub\,
+{\color{mycolor}\faGithub}\,
 \href{https://github.com/<< basic.github >>}{<< basic.github >>}
 \end{SubTitle}
 
@@ -91,7 +105,8 @@ breaklinks}
 
 ~< for edu in education >~
     \Entry
-    \textbf{<< edu.school >>},
+    \textbf{<< edu.school >>}
+    \hfill
     << edu.location >>
 
     \Gap
@@ -156,7 +171,7 @@ breaklinks}
 
 ~< for res in research >~
     \Entry
-    << res.title >>
+    \textbf{<< res.title >>}
     \hfill
     << res.time|date_format >>
     \begin{Detail}
