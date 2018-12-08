@@ -12,9 +12,10 @@ basic:
 
 education:
   - school: University of Notre Dame
+    link: https://www.nd.edu/
     location: Notre Dame, IN
     studies: 
-      - title: Ph.D. student in Aerospace & Mechanical Engineering
+      - title: Ph.D. student in <a class="cv-link" target="_blank" href="https://ame.nd.edu/">Aerospace & Mechanical Engineering</a>
         time: 2016 - Present
         keywords:
           - computational fluid dynamics
@@ -25,9 +26,10 @@ education:
           - "GPA: 4.0/4.0"
 
   - school: Syracuse University
+    link: https://www.syracuse.edu/
     location: Syracuse, NY
     studies:
-      - title: M.S. in Mechanical & Aerospace Engineering
+      - title: M.S. in <a class="cv-link" target="_blank" href="http://eng-cs.syr.edu/our-departments/mechanical-and-aerospace-engineering/">Mechanical & Aerospace Engineering</a>
         time: 2013 - 2015
         keywords:
           - turbulence
@@ -39,9 +41,10 @@ education:
           - "GPA: 4.0/4.0"
 
   - school: Tongji University
+    link: https://en.tongji.edu.cn/
     location: Shanghai, China
     studies:
-      - title: B.S. in Automotive Engineering
+      - title: B.S. in <a class="cv-link" target="_blank" href="http://auto.tongji.edu.cn/">Automotive Engineering</a>
         time: 2007 - 2012
         keywords:
           - transportation design
@@ -68,7 +71,7 @@ experience:
       - 'Advisor: <a class="cv-link" href="mailto:greenma@syr.edu">Prof. Melissa Green</a>'
 
   - title: Computer Programmer
-    institute: Core Infrastructure Services, Syracuse University
+    institute: <a class="cv-link" target="_blank" href="https://its.syr.edu/about-us/departments/core-infrastructure-services/">Core Infrastructure Services</a>, Syracuse University
     time: 2015 - 2016
     details:
       - Assisted researchers in Department of Biology by performing bioinformatics programming on OrangeGrid (a high-throughput computing environment on campus) for evolutionary biology researches.
@@ -198,7 +201,7 @@ awards:
     detail: For ranking first in the program
     time: 2015
 
-  - award: Member of Honor Society of Phi Kappa Phi
+  - award: Member of <a class="cv-link" target="_blank" href="https://www.phikappaphi.org/">Honor Society of Phi Kappa Phi</a>
     time: 2014 - Present
 
   - award: Graduate Student Scholarship, Syracuse University

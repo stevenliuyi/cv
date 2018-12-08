@@ -106,14 +106,18 @@ breaklinks}
 
 ~< for edu in education >~
     \Entry
-    \textbf{<< edu.school >>}
+    ~< if edu.link is defined >~
+        \href{<< edu.link >>}{\textbf{<< edu.school >>}}
+    ~< else >~
+        \textbf{<< edu.school >>}
+    ~< endif >~
     \hfill
     << edu.location >>
 
     \Gap
     ~< for study in edu.studies >~
         \BulletItem
-        << study.title >>
+        << study.title|html2latex >>
         \hfill
         << study.time|date_format >>
         ~< if study.details is defined or study.keywords is defined >~
@@ -282,7 +286,7 @@ breaklinks}
 
 ~< for award in awards >~
     \BulletItem
-    << award.award >>
+    << award.award|html2latex >>
     \hfill
     << award.time|date_format >>
     ~< if award.detail is defined >~
