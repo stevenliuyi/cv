@@ -184,6 +184,10 @@ BoldItalicFont=FreeSerifBoldItalic]
 \newcommand{\SubSubBulletSymbol}{{\normalfont\fontsize{6}{7.2}\selectfont\raisebox{0.17em}{\char"25CB}}}
 \newcommand{\TildeSymbol}{{\normalfont\char"007E}}
 
+% Fontawesome
+\defaultfontfeatures{Path=./Fonts/Fontawesome/}
+\RequirePackage{fontawesome}
+
 % Headers and footers: Blank header, page number in footer.
 \AtEndDocument{\null\label{LastPage}}
 \newcommand{\PageKOfN}{{\UseHeaderFooterFont{Page}~\thepage~of~\pageref{LastPage}}}
