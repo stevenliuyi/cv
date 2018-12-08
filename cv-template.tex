@@ -4,13 +4,10 @@
 % vim: set fenc=utf-8
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% CV.tex
-%% <https://github.com/zachscrivena/simple-resume-cv>
-%% This is free and unencumbered software released into the
-%% public domain; see <http://unlicense.org> for details.
+%% Curriculum Vitae template TeX file
+%% <https://github.com/stevenliuyi/cv>
+%% Forked from <https://github.com/zachscrivena/simple-resume-cv>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% See "README.md" for instructions on compiling this document.
 
 \documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
 % Class options:
@@ -71,7 +68,11 @@ breaklinks}
 %%%%%%%%%%%%%%%
 
 {\color{mycolor}
-\Title{\CVAuthor}
+~< if basic.nickname is defined >~ 
+\TitleAlt{\CVAuthor}{(<< basic.nickname >>)}
+~< else >~
+    \Title{\CVAuthor}
+~< endif >~
 }
 
 \begin{SubTitle}
@@ -152,7 +153,7 @@ breaklinks}
         \begin{Detail}
         ~< for detail in exp.details >~
             \BulletItem
-            << detail >>
+            << detail|html2latex >>
         ~< endfor >~
         \end{Detail}
     ~< else >~
@@ -177,7 +178,7 @@ breaklinks}
     \begin{Detail}
     ~< for detail in res.details >~
         \BulletItem
-        << detail|html2latex >>
+        << detail|html2latex('{\color{gray}', '}') >>
     ~< endfor >~
     \end{Detail}
 ~< endfor >~

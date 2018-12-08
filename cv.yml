@@ -1,5 +1,6 @@
 basic:
-  name: Yi Liu (Steven)
+  name: Yi Liu
+  nickname: Steven
   title: Yi Liu's CV
   website: https://yliu.io
   email:
@@ -22,7 +23,6 @@ education:
           - aeroacoustics
         details:
           - "GPA: 4.0/4.0"
-          - "Advisor: Prof. Meng Wang"
 
   - school: Syracuse University
     location: Syracuse, NY
@@ -37,7 +37,6 @@ education:
           - GPU computing
         details:
           - "GPA: 4.0/4.0"
-          - "Advisor: Prof. Melissa Green"
 
   - school: Tongji University
     location: Shanghai, China
@@ -59,10 +58,14 @@ experience:
   - title: Research Assistant
     institute: <a class="cv-link" target="_blank" href="http://www.nd.edu/~flowpac/">Institute for Flow Physics and Control</a>, University of Notre Dame
     time: 2016 - Present
+    details:
+      - 'Advisor: <a class="cv-link" href="mailto:m.wang@nd.edu">Prof. Meng Wang</a>'
 
   - title: Research Assistant
     institute: <a class="cv-link" target="_blank" href="http://greenfluids.syr.edu/">Green Fluid Dynamics Lab</a>, Syracuse University
     time: 2014 - 2016
+    details:
+      - 'Advisor: <a class="cv-link" href="mailto:greenma@syr.edu">Prof. Melissa Green</a>'
 
   - title: Computer Programmer
     institute: Core Infrastructure Services, Syracuse University

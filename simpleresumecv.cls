@@ -233,6 +233,15 @@ BoldItalicFont=FreeSerifBoldItalic]
 \UseTitleFont{#1}%
 \par\endgroup\par}
 
+% Macro: Title (with nickname).
+\RequirePackage{relsize}
+\newcommand{\TitleAlt}[2]{%
+\par\pdfbookmark[1]{#1}{#1}%
+\begingroup\centering%
+\UseTitleFont{#1}%
+\,\UseTitleFont\smaller[2]{#2}%
+\par\endgroup\par}
+
 % Macro: SubTitle (personal information below name).
 \newenvironment{SubTitle}
 {\par\vspace{0.25\baselineskip}%

@@ -14,14 +14,15 @@ def date_format(s):
     return s
 
 
-def html2latex(s):
-    s = re.sub(r'<a[^>]*href="([^">]*)"[^>]*>([^<]*)</a>', r'\href{\1}{\2}',
-               s)  # link
+def html2latex(s, prefix='', suffix=''):
+    s = re.sub(r'<a[^>]*href="([^">]*)"[^>]*>([^<]*)</a>',
+               fr'{prefix}\href{{\1}}{{\2}}{suffix}', s)  # link
     s = re.sub(r'\s*<i[^>]*iconfont[^>]*>([^<]*</i>\s*)', '',
                s)  # remove icons
     s = re.sub(r'<i>([^<]*)</i>', r'\\textit{\1}', s)  # italic
     s = re.sub(r'<span[^>]*under[^>]*>([^<]*)</span>', r'\underline{\1}',
                s)  # underline
+
     return s
 
 
