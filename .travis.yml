@@ -20,7 +20,7 @@ install:
   - source activate tectonic
 
 script:
-  - python generate.py --tectonic
+  - python generate.py --tectonic --color 0d8aba
 
 after_success:
   - git config --global user.email "stevenliuyi@gmail.com"

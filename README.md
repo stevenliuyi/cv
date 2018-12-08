@@ -6,3 +6,23 @@ This repository contains the source code that I use to automatically generate my
 The CV is based on the LaTeX template from [zachscrivena/simple-resume-cv](https://github.com/zachscrivena/simple-resume-cv). [generate.py](https://github.com/stevenliuyi/cv/blob/master/generate.py) is a Python script that reads data from [cv.yml](https://github.com/stevenliuyi/cv/blob/master/cv.yml) and then generates the corresponding CV. Outside of this repo, [cv.yml](https://github.com/stevenliuyi/cv/blob/master/cv.yml) is also used in [stevenliuyi/my-website](https://github.com/stevenliuyi/my-website) to generate the HTML version of my CV at https://yliu.io/resume.
 
 This repository is mostly inspired by [bamos/cv](https://github.com/bamos/cv).
+
+### Usage
+
+Generate CV PDF file using Latexmk (default choice):
+
+```
+python generate.py
+```
+
+Use [Tectonic](https://tectonic-typesetting.github.io) instead of Latexmk to compile the file:
+
+```
+python generate.py --tectonic
+```
+
+Chnage the secondary text color of the file (default is black, which is the same as the primary text color):
+
+```
+python generate.py --color 0d8aba
+```
