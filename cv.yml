@@ -120,6 +120,8 @@ courses:
       - title: Advanced Aerodynamics
       - title: Turbulence
       - title: Viscous Flow
+      - title: Aeroacoustics
+      - title: Hydrodynamic stability
 
   - category: Applied Math/Computer Science
     courses:
@@ -140,6 +142,8 @@ teaching:
     institute: University of Notre Dame
     time: 2016 - Present
     courses:
+      - title: AME20222 Mechanics II
+        time: Spring 2019
       - title: AME20214 Introduction to Engineering Computing
         time: Fall 2018
       - title: AME30363 Design of Machine Elements
@@ -167,7 +171,7 @@ publications:
 presentations:
   - title: Computation of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
     authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
-    detail: Mechanics and Applied Science Seminar, University of Notre Dame, Notre Dame, IN, USA. 18 Jan 2019 (scheduled)
+    detail: Mechanics and Applied Science Seminar, University of Notre Dame, Notre Dame, IN, USA. 18 Jan 2019
 
   - title: Computation of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
     authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
