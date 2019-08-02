@@ -145,7 +145,7 @@ teaching:
       - title: AME20222 Mechanics II
         time: Spring 2019
       - title: AME20214 Introduction to Engineering Computing
-        time: Fall 2018
+        time: Fall 2018, Fall 2019
       - title: AME30363 Design of Machine Elements
         time: Spring 2018
       - title: AME30331 Fluid Mechanics
@@ -169,9 +169,17 @@ publications:
 
 
 presentations:
-  - title: Computation of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
+  - title: Wavenumber-frequency Spectra of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
     authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
-    detail: Mechanics and Applied Science Seminar, University of Notre Dame, Notre Dame, IN, USA. 18 Jan 2019
+    detail: 72nd Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Seattle, WA, USA. 23-26 Nov 2019 (scheduled)
+ 
+  #- title: Direct Numerical Simulation of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
+  #  authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
+  #  detail: Shanghai Automotive Wind Tuneel Center, Tongji University, Shanghai, China. 2 July 2019
+  #
+  #- title: Computation of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
+  #  authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
+  #  detail: Mechanics and Applied Science Seminar, University of Notre Dame, Notre Dame, IN, USA. 18 Jan 2019
 
   - title: Computation of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
     authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
