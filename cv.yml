@@ -122,6 +122,7 @@ courses:
       - title: Viscous Flow
       - title: Aeroacoustics
       - title: Hydrodynamic stability
+      - title: Advanced Continuum Mechanics
 
   - category: Applied Math/Computer Science
     courses:
@@ -142,6 +143,8 @@ teaching:
     institute: University of Notre Dame
     time: 2016 - Present
     courses:
+      - title: AME34334 Heat Transfer
+        time: Spring 2020
       - title: AME20222 Mechanics II
         time: Spring 2019
       - title: AME20214 Introduction to Engineering Computing
@@ -169,9 +172,10 @@ publications:
 
 
 presentations:
-  - title: Wavenumber-frequency Spectra of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
+  - title: Wavenumber-frequency Spectra of Wall-Pressure Fluctuations in Compressible Turbulent Channel Flow
     authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
-    detail: 72nd Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Seattle, WA, USA. 23-26 Nov 2019 (scheduled)
+    detail: 72nd Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Seattle, WA, USA. 23-26 Nov 2019
+    link: https://meetings.aps.org/Meeting/DFD19/Session/G06.4
  
   #- title: Direct Numerical Simulation of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
   #  authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
@@ -208,6 +212,9 @@ presentations:
 
 
 awards:
+  - award: Graduate Student Professional Development Award, The University of Notre Dame Graduate School
+    time: 2019
+
   - award: Outstanding Graduate Student of Mechanical & Aerospace Engineering, Syracuse University
     detail: For ranking first in the program
     time: 2015
