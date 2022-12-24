@@ -1,9 +1,7 @@
+os: linux
 language: python
-
-python:
-  - "3.6"
-
-sudo: required
+python: "3.6"
+dist: focal
 
 install:
   # install conda with tectonic
