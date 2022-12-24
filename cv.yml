@@ -14,8 +14,8 @@ education:
   - school: University of Notre Dame
     link: https://www.nd.edu/
     location: Notre Dame, IN
-    studies: 
-      - title: Ph.D. student in <a class="cv-link" target="_blank" href="https://ame.nd.edu/">Aerospace & Mechanical Engineering</a>
+    studies:
+      - title: Ph.D. Candidate in <a class="cv-link" target="_blank" href="https://ame.nd.edu/">Aerospace & Mechanical Engineering</a>
         time: 2016 - Present
         keywords:
           - computational fluid dynamics
@@ -58,16 +58,16 @@ education:
 
 experience:
   - title: Research Assistant
-    institute: <a class="cv-link" target="_blank" href="http://www.nd.edu/~flowpac/">Institute for Flow Physics and Control</a>, University of Notre Dame
+    institute: <a class="cv-link" target="_blank" href="https://flowpac.nd.edu/">Institute for Flow Physics and Control</a>, University of Notre Dame
     time: 2016 - Present
     details:
       - 'Advisor: <a class="cv-link" href="mailto:m.wang@nd.edu">Prof. Meng Wang</a>'
 
   - title: Research Assistant
-    institute: <a class="cv-link" target="_blank" href="http://greenfluids.syr.edu/">Green Fluid Dynamics Lab</a>, Syracuse University
+    institute: <a class="cv-link" target="_blank" href="https://www.greenfluidslab.com/">Green Fluid Dynamics Lab</a>, Syracuse University
     time: 2014 - 2016
     details:
-      - 'Advisor: <a class="cv-link" href="mailto:greenma@syr.edu">Prof. Melissa Green</a>'
+      - 'Advisor: <a class="cv-link" href="mailto:magreen@umn.edu">Prof. Melissa Green</a>'
 
   - title: Computer Programmer
     institute: <a class="cv-link" target="_blank" href="https://its.syr.edu/about-us/departments/core-infrastructure-services/">Core Infrastructure Services</a>, Syracuse University
@@ -77,10 +77,15 @@ experience:
 
 
 research:
-  - title: Wall pressure fluctuations in compressible turbulent channel flows
+  - title: High-Reynolds-number turbulent boundary layer flow over a forward step
+    time: 2021 - Present
+    details:
+      - Perform wall-modeled large-eddy simulations (WMLES) to investigate the turbulent boundary-layer flow over a small forward-facing step, with a focus on the effect of the step on wall-pressure fluctuations.
+
+  - title: Wall-pressure fluctuations in compressible turbulent wall-bounded flows
     time: 2017 - Present
     details:
-      - Performing direct numerical simulations (DNS) and large-eddy simulations (LES) to investigate spatiotemporal characteristics of unsteady wall pressure in compressible channel flows.
+      - Perform direct numerical simulations (DNS) with high-order non-dissipative scheme to investigate spatiotemporal characteristics of unsteady wall pressure in compressible turbulent channel flows and boundary-layer flows.
 
   - title: Lagrangian coherent structures (LCS) in the Gulf Stream
     time: 2014 - 2018
@@ -92,7 +97,7 @@ research:
   - title: Three dimensional LCS in a turbulent channel flow
     time: 2014 – 2016
     details:
-      - Computed 3D FTLE fields of the direct numerical simulation (DNS) results of a turbulent channel flow toinvestigate the 3D coherent structures.
+      - Computed 3D FTLE fields of the direct numerical simulation (DNS) results of a turbulent channel flow to investigate the 3D coherent structures.
       - Adopted high-throughput computing (HTC) technique to speed up 3D calculations.
       - Code available at <a class="cv-link-gray" target="_blank" href="https://github.com/stevenliuyi/3d-ftle">https://github.com/stevenliuyi/3d-ftle</a>.
 
@@ -137,11 +142,13 @@ courses:
       - title: Uncertainty Quantification
         github: uq
       - title: Applied Partial Differential Equations
+      - title: Advanced Topics in Machine Learning
+      - title: Deep Learning with Graphs​
 
 teaching:
   - title: Teaching Assistant
     institute: University of Notre Dame
-    time: 2016 - Present
+    time: 2016 - 2020
     courses:
       - title: AME34334 Heat Transfer
         time: Spring 2020
@@ -165,18 +172,47 @@ teaching:
 
 
 publications:
+  - title: Effect of a Small Hump on Wall-Pressure Fluctuations in a Compressible Turbulent Channel Flow
+    authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang (2022)
+    detail: <i>AIAA</i> 2022-2991
+    link: https://doi.org/10.2514/6.2022-2991
+
+  - title: "COVID-Scraper: An Open-Source Toolset for Automatically Scraping and Processing Global Multi-Scale Spatiotemporal COVID-19 Records"
+    authors: Hai Lan, Dexuan Sha, Anusha Srirenganathan Malarvizhi, <span class="under">Yi Liu</span>, Yun Li, Nadine Meister, ... Chaowei Phil Yang (2021)
+    detail: <i>IEEE Access</i>, 9, 84783-84798
+    link: https://doi.org/10.1109/ACCESS.2021.3085682
+
+  - title: A Spatiotemporal Data Collection of Viral Cases for COVID-19 Rapid Response
+    authors: Dexuan Sha, <span class="under">Yi Liu</span>, Qian Liu, Yun Li, Yifei Tian, Fayez Beaini, ... Chaowei Yang (2021)
+    detail: <i>Big Earth Data</i>, 5(1), 90-111
+    link: https://doi.org/10.1080/20964471.2020.1844934
+
+  - title: Direct Computation of Wall-Pressure Fluctuations in a Compressible Turbulent Channel Flow
+    authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang (2022)
+    detail: <i>AIAA</i> 2021-2142
+    link: https://doi.org/10.2514/6.2021-2142
+
+  - title: A Commentary on Molecular Genealogy of Tusi Lu’s Family Reveals Their Paternal Relationship with Jochi, Genghis Khan’s Eldest Son
+    authors: <span class="under">Yi Liu</span> <i class="iconfont icon-mail" id="corresponding-author"></i>⍽(2021)
+    detail: <i>Journal of Human Genetics</i>, 66(5), 549-550
+    link: https://doi.org/10.1038/s10038-020-00857-y
+
   - title: Gulf Stream Transport and Mixing Processes via Coherent Structure Dynamics
     authors: <span class="under">Yi Liu</span> <i class="iconfont icon-mail" id="corresponding-author"></i>, Melissa Green, Chris Wilson, Chris Hughes (2018)
     detail: "<i>Journal of Geophysical Research: Oceans</i>, 123(4), 3014-3037"
-    link: 'https://doi.org/10.1002/2017JC013390'
-
+    link: https://doi.org/10.1002/2017JC013390
 
 presentations:
+  - title: Wall-Pressure Fluctuations in a High-Reynolds-Number Turbulent Boundary Layer Flow over a Forward Step
+    authors: Di Zhou, <span class="under">Yi Liu</span>, Meng Wang
+    detail: 75th Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Indianapolis, IN, USA. 20-22 Nov 2022
+    link: https://meetings.aps.org/Meeting/DFD22/Session/L37.7
+
   - title: Wavenumber-frequency Spectra of Wall-Pressure Fluctuations in Compressible Turbulent Channel Flow
     authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
     detail: 72nd Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Seattle, WA, USA. 23-26 Nov 2019
     link: https://meetings.aps.org/Meeting/DFD19/Session/G06.4
- 
+
   #- title: Direct Numerical Simulation of Wall Pressure Fluctuations in Compressible Turbulent Channel Flows
   #  authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
   #  detail: Shanghai Automotive Wind Tuneel Center, Tongji University, Shanghai, China. 2 July 2019
@@ -212,6 +248,9 @@ presentations:
 
 
 awards:
+  - award: WikiCite eScholarship
+    time: 2020
+
   - award: Graduate Student Professional Development Award, University of Notre Dame
     time: 2019
 
@@ -219,8 +258,8 @@ awards:
     detail: For ranking first in the program
     time: 2015
 
-  - award: Member of <a class="cv-link" target="_blank" href="https://www.phikappaphi.org/">Honor Society of Phi Kappa Phi</a>
-    time: 2014 - Present
+  #- award: Member of <a class="cv-link" target="_blank" href="https://www.phikappaphi.org/">Honor Society of Phi Kappa Phi</a>
+  #  time: 2014 - Present
 
   - award: Graduate Student Scholarship, Syracuse University
     time: 2013 - 2015
