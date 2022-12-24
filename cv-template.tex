@@ -68,7 +68,7 @@ breaklinks}
 %%%%%%%%%%%%%%%
 
 {\color{mycolor}
-~< if basic.nickname is defined >~ 
+~< if basic.nickname is defined >~
 \TitleAlt{\CVAuthor}{(<< basic.nickname >>)}
 ~< else >~
     \Title{\CVAuthor}
@@ -182,7 +182,7 @@ breaklinks}
     \begin{Detail}
     ~< for detail in res.details >~
         \BulletItem
-        << detail|html2latex('{\color{gray}', '}') >>
+        << detail|html2latex('{\\\color{gray}', '}') >>
     ~< endfor >~
     \end{Detail}
 ~< endfor >~

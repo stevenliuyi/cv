@@ -9,18 +9,18 @@ from jinja2 import Environment, FileSystemLoader
 
 def date_format(s):
     s = str(s)
-    s = re.sub(r'(\d+)', r'\DatestampY{\1}', s)
+    s = re.sub(r'(\d+)', r'\\DatestampY{\1}', s)
     s = re.sub('-', '--', s)
     return s
 
 
 def html2latex(s, prefix='', suffix=''):
     s = re.sub(r'<a[^>]*href="([^">]*)"[^>]*>([^<]*)</a>',
-               fr'{prefix}\href{{\1}}{{\2}}{suffix}', s)  # link
+               fr'{prefix}\\href{{\1}}{{\2}}{suffix}', s)  # link
     s = re.sub(r'\s*<i[^>]*iconfont[^>]*>([^<]*</i>\s*)', '',
                s)  # remove icons
     s = re.sub(r'<i>([^<]*)</i>', r'\\textit{\1}', s)  # italic
-    s = re.sub(r'<span[^>]*under[^>]*>([^<]*)</span>', r'\underline{\1}',
+    s = re.sub(r'<span[^>]*under[^>]*>([^<]*)</span>', r'\\underline{\1}',
                s)  # underline
 
     return s
