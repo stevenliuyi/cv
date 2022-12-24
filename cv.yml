@@ -144,7 +144,7 @@ courses:
         github: uq
       - title: Applied Partial Differential Equations
       - title: Advanced Topics in Machine Learning
-      - title: Deep Learning with Graphs​
+      - title: Deep Learning with Graphs
 
 teaching:
   - title: Teaching Assistant
@@ -194,7 +194,7 @@ publications:
     link: https://doi.org/10.2514/6.2021-2142
 
   - title: A Commentary on Molecular Genealogy of Tusi Lu’s Family Reveals Their Paternal Relationship with Jochi, Genghis Khan’s Eldest Son
-    authors: <span class="under">Yi Liu</span> <i class="iconfont icon-mail" id="corresponding-author"></i>⍽(2021)
+    authors: <span class="under">Yi Liu</span> <i class="iconfont icon-mail" id="corresponding-author"></i> (2021)
     detail: <i>Journal of Human Genetics</i>, 66(5), 549-550
     link: https://doi.org/10.1038/s10038-020-00857-y
 
