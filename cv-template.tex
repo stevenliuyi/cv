@@ -298,6 +298,21 @@ breaklinks}
     \Gap
 ~< endfor >~
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PEER REVIEW ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Peer Review\newline Activities}
+{Peer Review Activities}
+{PDF:PeerReviewActivities}
+
+~< for review in reviews >~
+    \textit{
+        << review >>
+    }<< ',' if not loop.last >>
+~< endfor >~
+
 \end{Body}
 
 %%%%%%%%%%%
@@ -307,6 +322,6 @@ breaklinks}
 \BigGap
 \UseNoteFont%
 \null\hfill%
-[\textit{\CVNote}]
+[\textit{\CVNote}]\nopagebreak[4]
 
 \end{document}

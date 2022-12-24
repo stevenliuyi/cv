@@ -85,7 +85,8 @@ research:
   - title: Wall-pressure fluctuations in compressible turbulent wall-bounded flows
     time: 2017 - Present
     details:
-      - Perform direct numerical simulations (DNS) with high-order non-dissipative scheme to investigate spatiotemporal characteristics of unsteady wall pressure in compressible turbulent channel flows and boundary-layer flows.
+      - Perform direct numerical simulations (DNS) to investigate spatiotemporal characteristics of unsteady wall pressure in compressible turbulent channel flows and boundary-layer flows.
+      - Participate in th development of in-house compressible DNS solver with high-order non-dissipative finite difference scheme
 
   - title: Lagrangian coherent structures (LCS) in the Gulf Stream
     time: 2014 - 2018
@@ -203,7 +204,7 @@ publications:
     link: https://doi.org/10.1002/2017JC013390
 
 presentations:
-  - title: Wall-Pressure Fluctuations in a High-Reynolds-Number Turbulent Boundary Layer Flow over a Forward Step
+  - title: Wall-Pressure Fluctuations in a High Reynolds Number Turbulent Boundary Layer Flow over a Forward Step
     authors: Di Zhou, <span class="under">Yi Liu</span>, Meng Wang
     detail: 75th Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Indianapolis, IN, USA. 20-22 Nov 2022
     link: https://meetings.aps.org/Meeting/DFD22/Session/L37.7
@@ -266,3 +267,6 @@ awards:
 
   - award: Outstanding Student Scholarship, Tongji Unversity
     time: 2008, 2009
+
+reviews:
+  - Computer Physics Communications
