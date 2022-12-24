@@ -89,7 +89,7 @@ def process_resume(context, yaml_data):
 def read_yaml():
     yaml_data = {}
     with open(yaml_name) as f:
-        yaml_data.update(yaml.load(f))
+        yaml_data.update(yaml.safe_load(f))
 
     return yaml_data
 
