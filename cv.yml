@@ -9,7 +9,6 @@ basic:
   github: stevenliuyi
   address: B033, Hessert Lab, Univ. of Notre Dame, Notre Dame, IN 46545
 
-
 education:
   - school: University of Notre Dame
     link: https://www.nd.edu/
@@ -55,7 +54,6 @@ education:
       - title: Visiting student in Industrial Design at <a class="cv-link" target="_blank" href="https://caup.tongji.edu.cn/caupen/">College of Architecture and Urban Planning</a>
         time: 2007 - 2009
 
-
 experience:
   - title: Research Assistant
     institute: <a class="cv-link" target="_blank" href="https://flowpac.nd.edu/">Institute for Flow Physics and Control</a>, University of Notre Dame
@@ -75,7 +73,6 @@ experience:
     details:
       - Assisted researchers in Department of Biology by performing bioinformatics programming on OrangeGrid (a high-throughput computing environment on campus) for evolutionary biology researches.
 
-
 research:
   - title: High-Reynolds-number turbulent boundary layer flow over a forward step
     time: 2021 - Present
@@ -86,7 +83,7 @@ research:
     time: 2017 - Present
     details:
       - Perform direct numerical simulations (DNS) to investigate spatiotemporal characteristics of unsteady wall pressure in compressible turbulent channel flows and boundary-layer flows.
-      - Participate in th development of in-house compressible DNS solver with high-order non-dissipative finite difference scheme
+      - Participate in the development of an in-house compressible DNS solver with high-order non-dissipative finite difference scheme
 
   - title: Lagrangian coherent structures (LCS) in the Gulf Stream
     time: 2014 - 2018
@@ -113,7 +110,6 @@ research:
     time: 2012
     details:
       - Combined artificial neural network, genetic algorithm and CFD simulation to develop a novel method to improve aerodynamics performance in the automobile design process.
-
 
 courses:
   - category: Fluid Physics
@@ -171,7 +167,6 @@ teaching:
       - title: MAE585 Principle of Turbomachines
         time: Fall 2014
 
-
 publications:
   - title: Effect of a Small Hump on Wall-Pressure Fluctuations in a Compressible Turbulent Channel Flow
     authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang (2022)
@@ -204,6 +199,15 @@ publications:
     link: https://doi.org/10.1002/2017JC013390
 
 presentations:
+  - title: Wall-Pressure Fluctuations in Weakly Compressible Turbulent Channel Flow
+    authors: Meng Wang, <span class="under">Yi Liu</span>, Kan Wang
+    detail: 185th Meeting of the Acoustical Society of America, Sydney, Australia. 4-8 Dec 2023
+
+  - title: Subconvective Characteristics of Wall-Pressure Fluctuations in Low-Mach-Number Turbulent Channel Flow
+    authors: <span class="under">Yi Liu</span>, Kan Wang, Meng Wang
+    detail: 76th Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Washington, DC, USA. 19-21 Nov 2023
+    link: https://meetings.aps.org/Meeting/DFD23/Session/T05.1
+
   - title: Wall-Pressure Fluctuations in a High Reynolds Number Turbulent Boundary Layer Flow over a Forward Step
     authors: Di Zhou, <span class="under">Yi Liu</span>, Meng Wang
     detail: 75th Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Indianapolis, IN, USA. 20-22 Nov 2022
@@ -246,7 +250,6 @@ presentations:
     authors: <span class="under">Yi Liu</span>, Chris Wilson, Melissa Green, Chris Hughes
     detail: 68th Annual Meeting of the American Physical Society's Division of Fluid Dynamics, Boston, MA, USA. 22-24 Nov 2015
     link: https://meetings.aps.org/Meeting/DFD15/Session/R28.5
-
 
 awards:
   - award: WikiCite eScholarship, Alfred P. Sloan Foundation
